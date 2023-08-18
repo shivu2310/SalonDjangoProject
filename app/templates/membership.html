@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} services {% endblock %}
+
+{% block member %}   active  {% endblock %}
+
+{% block body %}
+
+<div class="text-bg-light py-5">   <!-- div main outermost-->
+
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 my-4 border border-secondary rounded-4 py-2 px-3" style="background-color:  #BCD3E7;">
+          <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+            
+    <!-- ----------------------------------------------------------------------------->
+    
+    <svg width="40" height="32" class="me-2" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect id="icons8-member-60 1" width="60" height="60" fill="url(#pattern0)"/>
+        <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_1_2" transform="scale(0.0166667)"/>
+        </pattern>
+        <image id="image0_1_2" data-name="icons8-member-60.png" width="60" height="60" xlink:href="data:image/png;base64,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"/>
+        </defs>
+        </svg>
+        
+        <!-- ----------------------------------------------------------------------------->
+
+    
+    
+    
+            <span class="fs-4 text-dark"><em>Membership</em> </span>
+          </a>
+    
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 link-body-emphasis text-decoration-none text-dark" href="#"><em>6 Month</em></a>
+            <a class="me-3 py-2 link-body-emphasis text-decoration-none text-dark" href="#"><em>9 Month</em></a>
+            <a class="me-3 py-2 link-body-emphasis text-decoration-none text-dark" href="#"><em>12 Month</em></a>
+            
+          </nav>
+        </div>
+    
+        <div class="pricing-header p-3 pb-md-4 mx-auto border-top border-secondary  text-center rounded-top-4 " style="background-color:  #BCD3E7;">
+          <h1 class="display-4 fw-normal text-dark">Pricing</h1>
+          <p class="fs-5 text-dark">this is your golden ticket to a experience like no other. But wait, there's more! Elevate your journey with personalized recommendations tailored just for you, ensuring every choice is a perfect fit.</p>
+        </div>
+      </header>
+
+
+
+      <main>
+        <div class="row row-cols-1 row-cols-md-3  mx-auto text-center rounded-bottom-4 border-bottom border-secondary px-2 " style="background-color:  #BCD3E7;">
+            <div class="col">
+                <div class="card mb-4 rounded-4 shadow-sm border-primary px-3 mx-3 py-2 ">
+                  <div class="card-header rounded-4 text-bg-secondary border-primary ">
+                    <h4 class="my-0 fw-big"> <em>6 Month</em></h4>
+                  </div>
+                  <div class="card-body ">
+                    <h1 class="card-title pricing-card-title">&#8377;<small class=" text-body-secondary fw-light"><strong>2500</strong></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li><h6>Unlimited Barbered Haircuts</h6></li>
+                      <li><h6>No Root Touch-Ups</h6></li>
+                      <li><h6>Monthly Auto Billing</h6></li>
+                      <li><h6>5% Off Retail Products</h6></li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-secondary rounded-4 ">Get It</button>
+                  </div>
+                </div>
+              </div>
+          <div class="col">
+            <div class="card mb-4 rounded-4 shadow-sm border-primary px-3 mx-3 py-2 ">
+              <div class="card-header rounded-5 text-bg-secondary border-primary ">
+                <h4 class="my-0 fw-big"> <em>9 Month</em></h4>
+              </div>
+              <div class="card-body ">
+                <h1 class="card-title pricing-card-title">&#8377;<small class=" text-body-secondary fw-light"><strong>3000</strong></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li><h6>Unlimited Blowouts</h6></li>
+                  <li><h6>limited Root Touch-Ups</h6></li>
+                  <li><h6>Monthly Auto Billing</h6></li>
+                  <li><h6>5% Off Retail Products</h6></li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-secondary rounded-4 ">Get It</button>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="col">
+            <div class="card mb-4 rounded-4 shadow-sm border-primary px-3 mx-3 py-2 ">
+              <div class="card-header rounded-4 text-bg-secondary border-primary ">
+                <h4 class="my-0 fw-big"> <em>12 Month</em></h4>
+              </div>
+              <div class="card-body ">
+                <h1 class="card-title pricing-card-title">&#8377;<small class=" text-body-secondary fw-light"><strong>4000</strong></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li><h6>Unlimited Blowouts</h6></li>
+                  <li><h6>Unlimited Root Touch-Ups</h6></li>
+                  <li><h6>Unlimited Haircuts</h6></li>
+                  <li><h6>10% Off Retail Products</h6></li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-secondary rounded-4 ">Get It</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+        <h2 class="display-6 text-center my-5">Compare plans</h2>
+    
+        <div class="table-responsive" >
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">6 Month</th>
+                <th style="width: 22%;">9 Month</th>
+                <th style="width: 22%;">12 Month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Hair Treatment</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Hair Coloring</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+            </tbody>
+    
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Hair Styling</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Facial</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Menicure</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Pedicure</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Waxing</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+              <tr>
+              <tr>
+                <th scope="row" class="text-start">Party Make-Up</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Saree Drapping</th>
+                <td>3 Times</td>
+                <td>6 Times</td>
+                <td>12 Times</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+</div>         <!--div main outermost-->
+    
+    {% endblock %}

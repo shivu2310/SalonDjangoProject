@@ -1,0 +1,80 @@
+
+{% extends 'baseproduct.html' %}
+{% load static %}
+
+{% block title %} MyCart {% endblock %}
+
+
+
+
+
+
+{% block body %}
+
+{% load cart %}
+
+<div class="rounded-4 py-5" style="background-color:  	#f9f9f7">
+
+    <div class="text-center py-2 my-2 mx-auto col-lg-3  border border-3 border-success rounded-4  alert alert-warning">
+        <p class="  display-6 my-auto "> <b>Your Order</b></p>
+        
+    </div>
+    
+
+
+    {% for i in orders %}
+    <div class="row rounded-4 my-3 py-4 px-4 text-center">
+
+        <div class="col-lg-1">
+            <h6>{{ forloop.counter }}.</h6>
+
+        </div>
+
+
+<div class="col-lg-3">
+
+    <img src="{{ i.product.image.url }}" class="img-thumbnail rounded-4" alt="...">
+
+</div>
+
+    
+<div class="col-lg-8 my-auto">
+
+<h4 class="my-4"><b>{{ i.product.name }}</b></h4>
+<h5 class="my-4">Price : &#8377;{{ i.product.price }}</h5>
+<h5 class="my-4">Quantity : {{ i.quantity }}</h5>
+<h5 class="my-4">Order Placed : {{ i.date }}</h5>
+
+<h4 class="my-4"> Total : &#8377;{{ i.quantity|multiply:i.price }}</h4>
+
+{% if i.status %}
+<h5 class="my-4 text-success">Status : Completed</h5>
+{% else %}
+<h5 class="my-4 text-danger">Status : Pending</h5>
+{% endif %}
+
+</div>
+
+</div>
+
+<hr>
+
+    {% endfor %}
+
+
+    
+        
+
+        
+    
+
+
+<!-- --------------------------------------------------------------------------- -->
+     
+
+
+
+
+</div>
+
+{% endblock %}

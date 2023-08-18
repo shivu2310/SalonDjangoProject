@@ -1,0 +1,73 @@
+
+{% extends 'baseproduct.html' %}
+{% load static %}
+
+{% block title %} Log in {% endblock %}
+
+
+
+
+{% block body %}
+
+
+<div class="py-5 mt-4 rounded-4" style="background-color:  	#f9f9f7">
+
+<div class="col-lg-5 mx-auto my-auto border border-secondary border-2 py-4 rounded-4 px-4" style="background-color:  	 #d9f0fd" >
+<!-- --------------------------------------------------------------------------- -->
+
+
+
+
+<form action="/loginpage/" method="post">
+    {% csrf_token %}
+
+    <div class=" text-center mx-auto col-lg-5 alert alert-warning  text-dark rounded-4 border border-3 border-success " role="alert">
+        
+       <h4><strong>Log In Here</strong></h4>
+    </div>
+    {% if error %}
+    <div class="alert alert-danger border border-3 border-danger rounded-4" role="alert">
+      <h4 class="alert-heading text-center">{{ error }}</h4>
+    </div>
+{% endif %}
+
+
+      
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" value="{{ filler.email }}" class="form-control border border-secondary border-2 rounded-4 py-2" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control border border-secondary border-2 rounded-4 py-2" name="password" id="exampleInputPassword1">
+        </div>
+
+       
+
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input border border-secondary border-2 rounded-4 " id="exampleCheck1">
+          <label class="form-check-label border border-2 rounded-4 " for="exampleCheck1">Check all Details</label>
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn btn-light rounded-4 border border-3 border-success "><strong>Log In</strong></button>
+    </div>
+    
+    
+    
+    
+    
+    
+</form>
+    
+<!-- --------------------------------------------------------------------------- -->
+</div>
+
+
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}  {% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+
+      
+      <div class="container py-4">  <!-- main body container -->
+        <!-- --------------------------------------------------------------------------- -->
+        
+            
+           
+
+            
+            <div class="nav-scroller    ">
+                
+                <nav class="nav nav-underline rounded-4 justify-content-between navbar px-5 bg-secondary border-bottom border-body fixed-top  mx-5 " data-bs-theme="dark" >
+                  
+                    <a class="nav-item nav-link link-body-emphasis{% block home %} {% endblock %} " href="/">HOME</a>
+                    
+
+                    
+                    <a class="nav-item nav-link link-body-emphasis {% block service %} {% endblock %}" href="/service/">SERVICES</a>
+                    
+                    <a class="nav-item nav-link link-body-emphasis {% block member %} {% endblock %}" href="/membership/">MEMBERSHIP</a>
+                    <a class="nav-item nav-link link-body-emphasis {% block product %} {% endblock %}" href="/productSale/">PRODUCTS</a>
+                    <a class="nav-item nav-link link-body-emphasis {% block about %} {% endblock %}" href="/about/">ABOUT US</a>
+                    <a class="nav-item nav-link link-body-emphasis {% block contact %} {% endblock %}" href="/contact/">CONTACT US</a>
+                    <a class="nav-item nav-link link-body-emphasis {% block appointment %} {% endblock %}" href="/appointment/">BOOK APPOINTMENT</a>
+                
+
+           
+                </nav>
+            </div>
+            
+      
+
+
+        
+
+    
+    {% block body %}
+
+    
+
+    
+    {% endblock %}
+    
+<!-- ---------------------------------------------------------------------------     -->
+
+<!-- custom card-->
+
+<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style=" opacity: 80%; background-image: url('http://source.unsplash.com/500x400/?nailart');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Best Nail Art</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                    
+                   
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="opacity: 80%;  background-image: url('http://source.unsplash.com/500x400/?facial');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Best Cosmetic Products</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style=" opacity: 80%; background-image: url('http://source.unsplash.com/500x400/?hairstyle');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hair Styling</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                    
+                   
+                </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!-- custom card has ended -->
+
+<!-- --------------------------------------------------------------------------- -->
+
+<!-- footer-->
+
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <p class="text-body-secondary">© Moni-Ra 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Membership</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact US</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Services</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hair Coloring</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facial </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Manicure</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Skin Treatment</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pedicure</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Products</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Foundation</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Primar</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">concealer</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Eye-Shadow Pallet</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Lipistick</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- footer ended-->
+
+
+
+
+
+<!-- --------------------------------------------------------------------------- -->
+</div>    <!-- main body container -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
